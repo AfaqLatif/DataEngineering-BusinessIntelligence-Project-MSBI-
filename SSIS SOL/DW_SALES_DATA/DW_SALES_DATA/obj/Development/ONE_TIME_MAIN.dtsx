@@ -1,0 +1,867 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/9/2023 1:34:45 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-BQ7KS3S"
+  DTS:CreatorName="DESKTOP-BQ7KS3S\Afaq"
+  DTS:DTSID="{F2CE1246-15AF-4625-92BF-0F793579E0CC}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="ONE_TIME_MAIN"
+  DTS:PackageType="5"
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{525522BF-DC7B-42DA-92C8-513A1FB0BEAE}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DS - DL_DS_ODS PIPELINE"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{581846F3-D561-40FF-A22A-17B1156047C8}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DS - DL_DS_ODS PIPELINE">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE\EXT_S_CUSTOMERS"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{EB0480AB-E7E5-4CF4-AFE2-8D8D8BFE4A1E}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_S_CUSTOMERS"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_S_CUSTOMERS.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE\EXT_S_EMPLOYEES"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{BDE3A814-8473-43BB-A2F8-6F7C4A426915}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_S_EMPLOYEES"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_S_EMPLOYEES.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE\EXT_S_OFFICES"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{9DD87EA8-1B73-4135-A3EF-4176943AA811}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_S_OFFICES"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_S_OFFICES.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE\EXT_S_ORDERS"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{71B2889D-903A-4EA2-9A12-622C46E3D675}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_S_ORDERS"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_S_ORDERS.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE\EXT_S_ORDER_DETAILS"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{F7317ABE-60AF-4B7F-B865-897731E08611}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_S_ORDER_DETAILS"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_S_ORDER_DETAILS.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PAYMENTS"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{8465DE81-5463-4F12-BEF9-3230E2058C9F}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_S_PAYMENTS"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_S_PAYMENTS.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PRODUCTS"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{FF40C0B9-9CDA-4E89-B745-F7CCE989FCE7}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_S_PRODUCTS"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_S_PRODUCTS.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PRODUCT_CATEGORY"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{6427C012-992E-4A0D-90D2-524188ADC63F}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_S_PRODUCT_CATEGORY"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_S_PRODUCT_CATEGORY.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PRODUCT_LINES"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{EACA93E6-85A2-4213-98F2-CD7100EFA35F}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_S_PRODUCT_LINES"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_S_PRODUCT_LINES.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{FF9D0E30-9923-4F76-A71D-2B14E3BC1D29}"
+          DTS:From="Package\DS - DL_DS_ODS PIPELINE\EXT_S_CUSTOMERS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\DS - DL_DS_ODS PIPELINE\EXT_S_EMPLOYEES" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{D9623D7F-FE96-4A17-B4BE-BFDD76EB7F82}"
+          DTS:From="Package\DS - DL_DS_ODS PIPELINE\EXT_S_EMPLOYEES"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\DS - DL_DS_ODS PIPELINE\EXT_S_OFFICES" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{5176C68F-4960-4681-B62D-06F240505A23}"
+          DTS:From="Package\DS - DL_DS_ODS PIPELINE\EXT_S_OFFICES"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\DS - DL_DS_ODS PIPELINE\EXT_S_ORDER_DETAILS" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint 3]"
+          DTS:CreationName=""
+          DTS:DTSID="{B2DED91C-032F-4E72-A96F-88443D0AA1F0}"
+          DTS:From="Package\DS - DL_DS_ODS PIPELINE\EXT_S_ORDER_DETAILS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 3"
+          DTS:To="Package\DS - DL_DS_ODS PIPELINE\EXT_S_ORDERS" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint 4]"
+          DTS:CreationName=""
+          DTS:DTSID="{21140EC5-A524-47D7-BDBE-635888384085}"
+          DTS:From="Package\DS - DL_DS_ODS PIPELINE\EXT_S_ORDERS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 4"
+          DTS:To="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PAYMENTS" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint 5]"
+          DTS:CreationName=""
+          DTS:DTSID="{FBEADEFB-FFAA-4674-B64A-FC5149AE2D95}"
+          DTS:From="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PAYMENTS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 5"
+          DTS:To="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PRODUCTS" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint 6]"
+          DTS:CreationName=""
+          DTS:DTSID="{91B7526C-3B04-4096-B6FC-0B456AFB2881}"
+          DTS:From="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PRODUCTS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 6"
+          DTS:To="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PRODUCT_LINES" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint 7]"
+          DTS:CreationName=""
+          DTS:DTSID="{F92A459C-8DE5-4332-9651-F6F335063916}"
+          DTS:From="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PRODUCT_LINES"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 7"
+          DTS:To="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PRODUCT_CATEGORY" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\STAG - DW PIPELINE"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{15B62C37-2681-4B1D-8E77-3E98FC66B831}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="STAG - DW PIPELINE">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\STAG - DW PIPELINE\EXT_DW_CUSTOMERS"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{AE1D60C2-A186-4C8A-AA44-0D3E842C8FF4}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_DW_CUSTOMERS"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_DW_CUSTOMERS.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\STAG - DW PIPELINE\EXT_DW_EMPLOYEES"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{8B4D0E20-EB0A-40FD-8A4E-1B41F6E7D5D8}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_DW_EMPLOYEES"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_DW_EMPLOYEES.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\STAG - DW PIPELINE\EXT_DW_OFFICES"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{B000EA25-A07A-4D65-BCE8-EEA6D8912F97}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_DW_OFFICES"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_DW_OFFICES.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\STAG - DW PIPELINE\EXT_DW_ORDERS"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{CC30329C-41E5-47AE-9288-14C92BCD7104}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_DW_ORDERS"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_DW_ORDERS.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\STAG - DW PIPELINE\EXT_DW_ORDER_DETAILS"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{7EC28C60-2A05-4D42-960C-CC84FE9697F0}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_DW_ORDER_DETAILS"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_DW_ORDER_DETAILS.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\STAG - DW PIPELINE\EXT_DW_PAYMENTS"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{B3DECCD4-84CC-4CBB-88FD-ABA480B6BEE3}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_DW_PAYMENTS"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_DW_PAYMENTS.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\STAG - DW PIPELINE\EXT_DW_PRODUCTS"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{7E350092-26FF-46E6-A89D-1C8D34D872CA}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EXT_DW_PRODUCTS"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>EXT_DW_PRODUCTS.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\STAG - DW PIPELINE.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{9C3A7D2B-A7C2-445C-A002-2F7E2705828A}"
+          DTS:From="Package\STAG - DW PIPELINE\EXT_DW_CUSTOMERS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\STAG - DW PIPELINE\EXT_DW_EMPLOYEES" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\STAG - DW PIPELINE.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{A20F0516-8033-4048-BE69-72323953B6D8}"
+          DTS:From="Package\STAG - DW PIPELINE\EXT_DW_EMPLOYEES"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\STAG - DW PIPELINE\EXT_DW_OFFICES" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\STAG - DW PIPELINE.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{91C4749B-F038-4135-AE02-F7BF27814CAD}"
+          DTS:From="Package\STAG - DW PIPELINE\EXT_DW_OFFICES"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\STAG - DW PIPELINE\EXT_DW_PRODUCTS" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\STAG - DW PIPELINE.PrecedenceConstraints[Constraint 3]"
+          DTS:CreationName=""
+          DTS:DTSID="{74C393A5-CD02-4E98-A976-FCD2A4328714}"
+          DTS:From="Package\STAG - DW PIPELINE\EXT_DW_PRODUCTS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 3"
+          DTS:To="Package\STAG - DW PIPELINE\EXT_DW_ORDERS" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\STAG - DW PIPELINE.PrecedenceConstraints[Constraint 4]"
+          DTS:CreationName=""
+          DTS:DTSID="{7BF47502-758C-46C7-8F24-6E513CACB24C}"
+          DTS:From="Package\STAG - DW PIPELINE\EXT_DW_ORDERS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 4"
+          DTS:To="Package\STAG - DW PIPELINE\EXT_DW_ORDER_DETAILS" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\STAG - DW PIPELINE.PrecedenceConstraints[Constraint 5]"
+          DTS:CreationName=""
+          DTS:DTSID="{4823C913-CDB5-4484-9145-093A8462FA76}"
+          DTS:From="Package\STAG - DW PIPELINE\EXT_DW_ORDER_DETAILS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 5"
+          DTS:To="Package\STAG - DW PIPELINE\EXT_DW_PAYMENTS" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{81825AE3-520B-41D2-B752-ABB09F7FC001}"
+      DTS:From="Package\DS - DL_DS_ODS PIPELINE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\STAG - DW PIPELINE" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="191,42"
+          Id="Package\DS - DL_DS_ODS PIPELINE\EXT_S_CUSTOMERS"
+          TopLeft="29,28" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\DS - DL_DS_ODS PIPELINE\EXT_S_EMPLOYEES"
+          TopLeft="31,109" />
+        <NodeLayout
+          Size="189,42"
+          Id="Package\DS - DL_DS_ODS PIPELINE\EXT_S_OFFICES"
+          TopLeft="34,196" />
+        <NodeLayout
+          Size="212,42"
+          Id="Package\DS - DL_DS_ODS PIPELINE\EXT_S_ORDER_DETAILS"
+          TopLeft="17.5555555555555,280.111111111111" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\DS - DL_DS_ODS PIPELINE\EXT_S_ORDERS"
+          TopLeft="35,365" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PAYMENTS"
+          TopLeft="358,366" />
+        <NodeLayout
+          Size="242,42"
+          Id="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PRODUCT_CATEGORY"
+          TopLeft="334.222222222222,111" />
+        <NodeLayout
+          Size="212,42"
+          Id="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PRODUCT_LINES"
+          TopLeft="353,195" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\DS - DL_DS_ODS PIPELINE\EXT_S_PRODUCTS"
+          TopLeft="354,284" />
+        <EdgeLayout
+          Id="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint]"
+          TopLeft="124.75,70">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39"
+              Start="0,0"
+              End="0,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint 1]"
+          TopLeft="126.75,151">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45"
+              Start="0,0"
+              End="0,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint 2]"
+          TopLeft="126.027777777778,238">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.1111111111111"
+              Start="0,0"
+              End="0,34.6111111111111">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.6111111111111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint 3]"
+          TopLeft="127.527777777778,322.111111111111">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.8888888888889"
+              Start="0,0"
+              End="0,35.3888888888889">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.3888888888889" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint 4]"
+          TopLeft="228,386.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="130,0"
+              Start="0,0"
+              End="122.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="122.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint 5]"
+          TopLeft="456,366">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-40"
+              Start="0,0"
+              End="0,-32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-32.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint 6]"
+          TopLeft="456.5,284">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-47"
+              Start="0,0"
+              End="0,-39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DS - DL_DS_ODS PIPELINE.PrecedenceConstraints[Constraint 7]"
+          TopLeft="457.111111111111,195">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-42"
+              Start="0,0"
+              End="0,-34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="660,462"
+          Size="660,505"
+          Id="Package\DS - DL_DS_ODS PIPELINE"
+          TopLeft="52,61" />
+        <NodeLayout
+          Size="205,42"
+          Id="Package\STAG - DW PIPELINE\EXT_DW_CUSTOMERS"
+          TopLeft="38.2857142857143,41" />
+        <NodeLayout
+          Size="199,42"
+          Id="Package\STAG - DW PIPELINE\EXT_DW_EMPLOYEES"
+          TopLeft="42,127" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\STAG - DW PIPELINE\EXT_DW_OFFICES"
+          TopLeft="54,221" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\STAG - DW PIPELINE\EXT_DW_PRODUCTS"
+          TopLeft="46.8571428571429,313" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\STAG - DW PIPELINE\EXT_DW_ORDERS"
+          TopLeft="53.4285714285714,407" />
+        <NodeLayout
+          Size="223,42"
+          Id="Package\STAG - DW PIPELINE\EXT_DW_ORDER_DETAILS"
+          TopLeft="376,411.857142857143" />
+        <NodeLayout
+          Size="191,42"
+          Id="Package\STAG - DW PIPELINE\EXT_DW_PAYMENTS"
+          TopLeft="385.142857142857,317.571428571428" />
+        <EdgeLayout
+          Id="Package\STAG - DW PIPELINE.PrecedenceConstraints[Constraint]"
+          TopLeft="141.142857142857,83">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44"
+              Start="0,0"
+              End="0,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\STAG - DW PIPELINE.PrecedenceConstraints[Constraint 1]"
+          TopLeft="142.5,169">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52"
+              Start="0,0"
+              End="0,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\STAG - DW PIPELINE.PrecedenceConstraints[Constraint 2]"
+          TopLeft="143.428571428571,263">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50"
+              Start="0,0"
+              End="0,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\STAG - DW PIPELINE.PrecedenceConstraints[Constraint 3]"
+          TopLeft="142.892857142857,355">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52"
+              Start="0,0"
+              End="0,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\STAG - DW PIPELINE.PrecedenceConstraints[Constraint 4]"
+          TopLeft="231.428571428571,430.428571428571">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="144.571428571429,0"
+              Start="0,0"
+              End="137.071428571429,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="137.071428571429,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\STAG - DW PIPELINE.PrecedenceConstraints[Constraint 5]"
+          TopLeft="484.071428571429,411.857142857143">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-52.2857142857144"
+              Start="0,0"
+              End="0,-44.7857142857144">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-44.7857142857144" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="657,504"
+          Size="657,547"
+          Id="Package\STAG - DW PIPELINE"
+          TopLeft="54,668" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="382.25,566">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,102"
+              Start="0,0"
+              End="0,94.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,94.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

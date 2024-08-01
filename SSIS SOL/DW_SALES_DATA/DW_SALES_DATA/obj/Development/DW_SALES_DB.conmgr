@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LOCALHOST.DW_SALES_DB"
+  DTS:DTSID="{649D550A-7675-428B-8C8C-5C5CAAB4C28C}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=LOCALHOST;Initial Catalog=DW_SALES_DB;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-DW_SALES_DATA-{649D550A-7675-428B-8C8C-5C5CAAB4C28C}LOCALHOST.DW_SALES_DB;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

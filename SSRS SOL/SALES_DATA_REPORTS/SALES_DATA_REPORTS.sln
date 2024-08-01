@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "SALES_DATA_REPORTS", "SALES_DATA_REPORTS\SALES_DATA_REPORTS.rptproj", "{BD84D0B2-095D-4021-B3F5-65B91B51B2AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD84D0B2-095D-4021-B3F5-65B91B51B2AF}.Debug|Default.ActiveCfg = Debug
+		{BD84D0B2-095D-4021-B3F5-65B91B51B2AF}.Debug|Default.Build.0 = Debug
+		{BD84D0B2-095D-4021-B3F5-65B91B51B2AF}.Debug|Default.Deploy.0 = Debug
+		{BD84D0B2-095D-4021-B3F5-65B91B51B2AF}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{BD84D0B2-095D-4021-B3F5-65B91B51B2AF}.DebugLocal|Default.Build.0 = DebugLocal
+		{BD84D0B2-095D-4021-B3F5-65B91B51B2AF}.Release|Default.ActiveCfg = Release
+		{BD84D0B2-095D-4021-B3F5-65B91B51B2AF}.Release|Default.Build.0 = Release
+		{BD84D0B2-095D-4021-B3F5-65B91B51B2AF}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E54CF6F-9601-4E7A-B69B-8E826C44518F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LOCALHOST.STAG_SALES_DB"
+  DTS:DTSID="{B023C2CC-EE75-4E66-B033-4EF729509299}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=LOCALHOST;Initial Catalog=STAG_SALES_DB;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-DW_SALES_DATA-{B023C2CC-EE75-4E66-B033-4EF729509299}LOCALHOST.STAG_SALES_DB;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="DW_SALES_DB_TABULAR_MODEL">
+  <ConnectionProperties>
+    <Extension>OLEDB-MD</Extension>
+    <ConnectString>Data Source=LOCALHOST;Initial Catalog=SALES_DATA_TABULAR_MODEL</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
+  </ConnectionProperties>
+  <DataSourceID>e25f09ac-d2f3-4b58-b9d5-26263a6fa56c</DataSourceID>
+</RptDataSource>

@@ -1,0 +1,1011 @@
+{
+  "name": "SALES_DATA_TABULAR_MODEL",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "en-US",
+    "dataSources": [
+      {
+        "name": "SSAS_CON_DW_SALES_DB",
+        "connectionString": "Provider=SQLOLEDB;Data Source=LOCALHOST;Initial Catalog=DW_SALES_DB;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateServiceAccount",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "CUSTOMERS",
+        "columns": [
+          {
+            "name": "CUSTOMERNUMBER",
+            "dataType": "int64",
+            "sourceColumn": "CUSTOMERNUMBER",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "CUSTOMERNAME",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMERNAME",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "CONTACTLASTNAME",
+            "dataType": "string",
+            "sourceColumn": "CONTACTLASTNAME",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "CONTACTFIRSTNAME",
+            "dataType": "string",
+            "sourceColumn": "CONTACTFIRSTNAME",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "PHONE",
+            "dataType": "string",
+            "sourceColumn": "PHONE",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "ADDRESSLINE1",
+            "dataType": "string",
+            "sourceColumn": "ADDRESSLINE1",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "CITY",
+            "dataType": "string",
+            "sourceColumn": "CITY",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "STATE",
+            "dataType": "string",
+            "sourceColumn": "STATE",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "POSTALCODE",
+            "dataType": "string",
+            "sourceColumn": "POSTALCODE",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "COUNTRY",
+            "dataType": "string",
+            "sourceColumn": "COUNTRY",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "SALESREPEMPLOYEENUMBER",
+            "dataType": "int64",
+            "sourceColumn": "SALESREPEMPLOYEENUMBER",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "CREDITLIMIT",
+            "dataType": "double",
+            "sourceColumn": "CREDITLIMIT",
+            "sourceProviderType": "Numeric"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CUSTOMERS",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[CUSTOMERS].[CUSTOMERNUMBER],[dbo].[CUSTOMERS].[CUSTOMERNAME],[dbo].[CUSTOMERS].[CONTACTLASTNAME],[dbo].[CUSTOMERS].[CONTACTFIRSTNAME],[dbo].[CUSTOMERS].[PHONE],[dbo].[CUSTOMERS].[ADDRESSLINE1],[dbo].[CUSTOMERS].[CITY],[dbo].[CUSTOMERS].[STATE],[dbo].[CUSTOMERS].[POSTALCODE],[dbo].[CUSTOMERS].[COUNTRY],[dbo].[CUSTOMERS].[SALESREPEMPLOYEENUMBER],[dbo].[CUSTOMERS].[CREDITLIMIT]   FROM [dbo].[CUSTOMERS] ",
+              "dataSource": "SSAS_CON_DW_SALES_DB"
+            },
+            "annotations": [
+              {
+                "name": "TableWidgetSerialization",
+                "value": [
+                  "<?xml version=\"1.0\" encoding=\"UTF-16\"?><Gemini xmlns=\"TableWidgetSerialization\"><AnnotationContent><![CDATA[<?xml version=\"1.0\"?>",
+                  "<TableWidgetGridSerialization xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">",
+                  "  <ColumnSuggestedType />",
+                  "  <ColumnFormat />",
+                  "  <ColumnAccuracy />",
+                  "  <ColumnCurrencySymbol />",
+                  "  <ColumnPositivePattern />",
+                  "  <ColumnNegativePattern />",
+                  "  <ColumnWidths>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CUSTOMERNUMBER</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>126</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CUSTOMERNAME</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>113</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CONTACTLASTNAME</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>130</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CONTACTFIRSTNAME</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>135</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>PHONE</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>64</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>ADDRESSLINE1</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>104</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>ADDRESSLINE2</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>161</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CITY</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>53</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>STATE</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>61</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>POSTALCODE</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>96</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>COUNTRY</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>78</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>SALESREPEMPLOYEENUMBER</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>171</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CREDITLIMIT</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>94</int>",
+                  "      </value>",
+                  "    </item>",
+                  "  </ColumnWidths>",
+                  "  <ColumnDisplayIndex>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CUSTOMERNUMBER</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>0</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CUSTOMERNAME</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>1</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CONTACTLASTNAME</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>2</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CONTACTFIRSTNAME</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>3</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>PHONE</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>4</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>ADDRESSLINE1</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>5</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>ADDRESSLINE2</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>6</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CITY</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>7</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>STATE</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>8</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>POSTALCODE</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>9</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>COUNTRY</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>10</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>SALESREPEMPLOYEENUMBER</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>11</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CREDITLIMIT</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>12</int>",
+                  "      </value>",
+                  "    </item>",
+                  "  </ColumnDisplayIndex>",
+                  "  <ColumnFrozen />",
+                  "  <ColumnChecked>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>ADDRESSLINE2</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <boolean>false</boolean>",
+                  "      </value>",
+                  "    </item>",
+                  "  </ColumnChecked>",
+                  "  <ColumnFilter />",
+                  "  <SelectionFilter />",
+                  "  <FilterParameters />",
+                  "  <IsSortDescending>false</IsSortDescending>",
+                  "</TableWidgetGridSerialization>]]></AnnotationContent></Gemini>"
+                ]
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[CUSTOMERS].[CUSTOMERNUMBER],[dbo].[CUSTOMERS].[CUSTOMERNAME],[dbo].[CUSTOMERS].[CONTACTLASTNAME],[dbo].[CUSTOMERS].[CONTACTFIRSTNAME],[dbo].[CUSTOMERS].[PHONE],[dbo].[CUSTOMERS].[ADDRESSLINE1],[dbo].[CUSTOMERS].[CITY],[dbo].[CUSTOMERS].[STATE],[dbo].[CUSTOMERS].[POSTALCODE],[dbo].[CUSTOMERS].[COUNTRY],[dbo].[CUSTOMERS].[SALESREPEMPLOYEENUMBER],[dbo].[CUSTOMERS].[CREDITLIMIT]   FROM [dbo].[CUSTOMERS] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "CUSTOMERS"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          },
+          {
+            "name": "TableWidgetSerialization",
+            "value": [
+              "<?xml version=\"1.0\" encoding=\"UTF-16\"?><Gemini xmlns=\"TableWidgetSerialization\"><AnnotationContent><![CDATA[<?xml version=\"1.0\"?>",
+              "<TableWidgetGridSerialization xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">",
+              "  <ColumnSuggestedType />",
+              "  <ColumnFormat />",
+              "  <ColumnAccuracy />",
+              "  <ColumnCurrencySymbol />",
+              "  <ColumnPositivePattern />",
+              "  <ColumnNegativePattern />",
+              "  <ColumnWidths>",
+              "    <item>",
+              "      <key>",
+              "        <string>CUSTOMERNUMBER</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>126</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>CUSTOMERNAME</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>113</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>CONTACTLASTNAME</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>130</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>CONTACTFIRSTNAME</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>135</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>PHONE</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>64</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>ADDRESSLINE1</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>104</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>ADDRESSLINE2</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>161</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>CITY</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>53</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>STATE</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>61</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>POSTALCODE</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>96</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>COUNTRY</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>78</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>SALESREPEMPLOYEENUMBER</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>171</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>CREDITLIMIT</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>94</int>",
+              "      </value>",
+              "    </item>",
+              "  </ColumnWidths>",
+              "  <ColumnDisplayIndex>",
+              "    <item>",
+              "      <key>",
+              "        <string>CUSTOMERNUMBER</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>0</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>CUSTOMERNAME</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>1</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>CONTACTLASTNAME</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>2</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>CONTACTFIRSTNAME</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>3</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>PHONE</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>4</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>ADDRESSLINE1</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>5</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>ADDRESSLINE2</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>6</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>CITY</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>7</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>STATE</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>8</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>POSTALCODE</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>9</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>COUNTRY</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>10</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>SALESREPEMPLOYEENUMBER</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>11</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>CREDITLIMIT</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>12</int>",
+              "      </value>",
+              "    </item>",
+              "  </ColumnDisplayIndex>",
+              "  <ColumnFrozen />",
+              "  <ColumnChecked>",
+              "    <item>",
+              "      <key>",
+              "        <string>ADDRESSLINE2</string>",
+              "      </key>",
+              "      <value>",
+              "        <boolean>false</boolean>",
+              "      </value>",
+              "    </item>",
+              "  </ColumnChecked>",
+              "  <ColumnFilter />",
+              "  <SelectionFilter />",
+              "  <FilterParameters />",
+              "  <IsSortDescending>false</IsSortDescending>",
+              "</TableWidgetGridSerialization>]]></AnnotationContent></Gemini>"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "DATES",
+        "columns": [
+          {
+            "name": "TheDate",
+            "dataType": "string",
+            "sourceColumn": "TheDate",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "TheDay",
+            "dataType": "int64",
+            "sourceColumn": "TheDay",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "TheDayName",
+            "dataType": "string",
+            "sourceColumn": "TheDayName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "TheWeek",
+            "dataType": "int64",
+            "sourceColumn": "TheWeek",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "TheISOWeek",
+            "dataType": "int64",
+            "sourceColumn": "TheISOWeek",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "TheDayOfWeek",
+            "dataType": "int64",
+            "sourceColumn": "TheDayOfWeek",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "TheMonth",
+            "dataType": "int64",
+            "sourceColumn": "TheMonth",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "TheMonthName",
+            "dataType": "string",
+            "sourceColumn": "TheMonthName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "TheQuarter",
+            "dataType": "int64",
+            "sourceColumn": "TheQuarter",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "TheYear",
+            "dataType": "int64",
+            "sourceColumn": "TheYear",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "TheFirstOfMonth",
+            "dataType": "string",
+            "sourceColumn": "TheFirstOfMonth",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "TheLastOfYear",
+            "dataType": "string",
+            "sourceColumn": "TheLastOfYear",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "TheDayOfYear",
+            "dataType": "int64",
+            "sourceColumn": "TheDayOfYear",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DATES",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[DATES].*   FROM [dbo].[DATES] ",
+              "dataSource": "SSAS_CON_DW_SALES_DB"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[DATES].*   FROM [dbo].[DATES] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DATES"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "EMPLOYEES",
+        "columns": [
+          {
+            "name": "EMPLOYEENUMBER",
+            "dataType": "int64",
+            "sourceColumn": "EMPLOYEENUMBER",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "LASTNAME",
+            "dataType": "string",
+            "sourceColumn": "LASTNAME",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "FIRSTNAME",
+            "dataType": "string",
+            "sourceColumn": "FIRSTNAME",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "EXTENSION",
+            "dataType": "string",
+            "sourceColumn": "EXTENSION",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "EMAIL",
+            "dataType": "string",
+            "sourceColumn": "EMAIL",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "OFFICECODE",
+            "dataType": "string",
+            "sourceColumn": "OFFICECODE",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "REPORTSTO",
+            "dataType": "int64",
+            "sourceColumn": "REPORTSTO",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "JOBTITLE",
+            "dataType": "string",
+            "sourceColumn": "JOBTITLE",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "EMPLOYEES",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[EMPLOYEES].*   FROM [dbo].[EMPLOYEES] ",
+              "dataSource": "SSAS_CON_DW_SALES_DB"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[EMPLOYEES].*   FROM [dbo].[EMPLOYEES] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "EMPLOYEES"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "OFFICES",
+        "columns": [
+          {
+            "name": "ID",
+            "dataType": "int64",
+            "sourceColumn": "ID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "OFFICECODE",
+            "dataType": "string",
+            "sourceColumn": "OFFICECODE",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "PHONE",
+            "dataType": "string",
+            "sourceColumn": "PHONE",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "ADDRESSLINE1",
+            "dataType": "string",
+            "sourceColumn": "ADDRESSLINE1",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "ADDRESSLINE2",
+            "dataType": "string",
+            "sourceColumn": "ADDRESSLINE2",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "CITY",
+            "dataType": "string",
+            "sourceColumn": "CITY",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "STATE",
+            "dataType": "string",
+            "sourceColumn": "STATE",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "POSTALCODE",
+            "dataType": "string",
+            "sourceColumn": "POSTALCODE",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "COUNTRY",
+            "dataType": "string",
+            "sourceColumn": "COUNTRY",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "TERRITORY",
+            "dataType": "string",
+            "sourceColumn": "TERRITORY",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "OFFICES",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[OFFICES].*   FROM [dbo].[OFFICES] ",
+              "dataSource": "SSAS_CON_DW_SALES_DB"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[OFFICES].*   FROM [dbo].[OFFICES] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "OFFICES"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "ORDERS",
+        "columns": [
+          {
+            "name": "ORDERNUMBER",
+            "dataType": "int64",
+            "sourceColumn": "ORDERNUMBER",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "CUSTOMERNUMBER",
+            "dataType": "int64",
+            "sourceColumn": "CUSTOMERNUMBER",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "EMPLOYEENUMBER",
+            "dataType": "int64",
+            "sourceColumn": "EMPLOYEENUMBER",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "OFFICECODE",
+            "dataType": "string",
+            "sourceColumn": "OFFICECODE",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "ORDERDATE",
+            "dataType": "string",
+            "sourceColumn": "ORDERDATE",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "REQUIREDDATE",
+            "dataType": "string",
+            "sourceColumn": "REQUIREDDATE",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "SHIPPEDDATE",
+            "dataType": "string",
+            "sourceColumn": "SHIPPEDDATE",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "STATUS",
+            "dataType": "string",
+            "sourceColumn": "STATUS",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "COMMENTS",
+            "dataType": "string",
+            "sourceColumn": "COMMENTS",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "ORDERS",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[ORDERS].*   FROM [dbo].[ORDERS] ",
+              "dataSource": "SSAS_CON_DW_SALES_DB"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "NO OF CUSTOMERS",
+            "expression": " DISTINCTCOUNT(ORDERS[CUSTOMERNUMBER])"
+          },
+          {
+            "name": "NO OF ORDERS",
+            "expression": " COUNT(ORDERS[ORDERNUMBER])"
+          },
+          {
+            "name": "NO OF SHIPPED ORDERS",
+            "expression": " CALCULATE(COUNT(ORDERS[ORDERNUMBER]),FILTER(ORDERS,ORDERS[STATUS] = \"Shipped\"))"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[ORDERS].*   FROM [dbo].[ORDERS] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "ORDERS"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "9a31d305-3628-4d7b-aa8a-a6ee778684fa",
+        "fromTable": "ORDERS",
+        "fromColumn": "CUSTOMERNUMBER",
+        "toTable": "CUSTOMERS",
+        "toColumn": "CUSTOMERNUMBER"
+      },
+      {
+        "name": "ca96d3f4-dd91-4ca8-8912-0a67b8ebbaf4",
+        "fromTable": "ORDERS",
+        "fromColumn": "EMPLOYEENUMBER",
+        "toTable": "EMPLOYEES",
+        "toColumn": "EMPLOYEENUMBER"
+      },
+      {
+        "name": "eb335762-5a08-48b7-8e59-2fbee7124903",
+        "fromTable": "ORDERS",
+        "fromColumn": "OFFICECODE",
+        "toTable": "OFFICES",
+        "toColumn": "OFFICECODE"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  }
+}
