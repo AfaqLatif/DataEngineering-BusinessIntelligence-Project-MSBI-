@@ -22,12 +22,13 @@ Here is a step-by-step procedure for your data engineering project using SSIS, S
 - Use SQL to to perform a complete analysis on data and for adhoc reports
 
 ## The key components are:
-MySQL Source: The original data source
-SSIS ETL: Extracts, transforms, and loads data from MySQL to staging and data warehouse
-SQL Server Staging: Intermediate database for data cleansing and optimization
-Data Warehouse: Central repository with dimensional model
-SSAS Cube: Analytical model for slicing and dicing data
-SSRS Reports: Tabular reports 
-Power BI Reports: Interactive reports and dashboards
+- MySQL Source: The original data source
+- SSIS ETL: Extracts, transforms, and loads data from MySQL to staging and data warehouse
+- SQL : For data analysis and ETL querying
+- SQL Server Staging: Intermediate database for data cleansing and optimization
+- Data Warehouse: Central repository with dimensional model
+- SSAS Cube: Analytical model for slicing and dicing data
+- SSRS Reports: Tabular reports 
+- Power BI Reports: Interactive reports and dashboards
 
 This architecture leverages the strengths of each Microsoft BI tool to create a robust data platform that supports data extraction, transformation, modeling, analysis, and reporting.
